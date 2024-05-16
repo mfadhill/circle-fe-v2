@@ -17,6 +17,7 @@ const RootLayout = () => {
             <Box flex={1} sx={{}}>
                <Sidebar />
             </Box>
+            
             <Box
                flex={2.5}
                className="thread-container"

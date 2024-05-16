@@ -33,7 +33,7 @@ const ImageComponent: React.FC<IProps> = ({ image }) => {
          {image?.map((item) => (
             <Box flex="1 1" minWidth={"50%"}>
                <img
-                  src={"http://localhost:5001/uploads/" + item.image}
+                  src={"http://localhost:5001/uploads/" + item.url}
                   alt="image"
                   style={{
                      width: "100%",

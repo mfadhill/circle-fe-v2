@@ -7,7 +7,7 @@ export interface IThread {
 
 export interface IThreadImage {
    id?: number;
-   image?: string;
+   url?: string;
 }
 
 export interface IAuthor {
