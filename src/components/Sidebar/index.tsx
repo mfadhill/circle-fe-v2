@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import MenuItem from "./MenuItem";
 
 const Sidebar = () => {
@@ -12,11 +12,12 @@ const Sidebar = () => {
             gap: 2,
          }}
       >
-         <Box>CIRCLE</Box>
+         <Box> <Typography sx={{color:"green" }} variant="h4">CIRCLE</Typography> </Box>
          <Box>
             <MenuItem />
+
          </Box>
-         <Box>Button Create</Box>
+         <Box sx={{color:"#00e676"}}><Button sx={{width: "200px", background:"#00c853", color:"white", borderRadius:"20px"}} variant="outlined" color="success">Create Post</Button></Box>
          <Box sx={{ marginTop: "auto" }}>Logout</Box>
       </Box>
    );
