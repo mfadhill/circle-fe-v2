@@ -1,6 +1,6 @@
+import { Box } from "@mui/material";
 import React from "react";
 import { IThreadImage } from "../../../types/app";
-import { Box, Grid } from "@mui/material";
 
 interface IProps {
    image?: IThreadImage[];

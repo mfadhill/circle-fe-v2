@@ -28,7 +28,7 @@ const ThreadCard: FC<IProps> = ({ thread }) => {
          >
             <AuthorComponent author={thread.author} />
             <Typography>{thread.content}</Typography>
-            {thread.image?.length > 0 && (
+            {thread.image && thread.image.length > 0 && (
                <ImageComponent image={thread.image} />
             )}
          </Box>

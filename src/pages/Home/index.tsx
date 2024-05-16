@@ -1,8 +1,8 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import { useEffect, useState } from "react";
+import ThreadCard from "../../components/common/ThreadCard";
 import { getThreads } from "../../lib/api/call/thread";
 import { IThread } from "../../types/app";
-import ThreadCard from "../../components/common/ThreadCard";
 
 const Home = () => {
    const [thread, setThread] = useState<IThread[]>([]);
