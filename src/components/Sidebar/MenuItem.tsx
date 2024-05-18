@@ -49,23 +49,23 @@ const MENU = [
 
 const MenuItem = () => {
    return (
-      <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
-         {MENU.map((item) => (
-            <NavLink to={item.path} style={{ textDecoration: "none" }}>
-               {({ isActive }) => (
-                  <Box
-                     color={isActive ? "#fff" : "rgba(255, 255, 255, 0.6)"}
-                     display={"flex"}
-                     alignItems={"center"}
-                     sx={{ gap: 2 }}
-                  >
-                     {isActive ? item.icon.active : item.icon.nonActive}{" "}
-                     <Typography fontSize={20}>{item.name}</Typography>
-                  </Box>
-               )}
-            </NavLink>
-         ))}
-      </Box>
+       <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+           {MENU.map((item) => (
+               <NavLink to={item.path} key={item.name} style={{ textDecoration: "none" }}>
+                   {({ isActive }) => (
+                       <Box
+                           color={isActive ? "#fff" : "rgba(255, 255, 255, 0.6)"}
+                           display={"flex"}
+                           alignItems={"center"}
+                           sx={{ gap: 2 }}
+                       >
+                           {isActive ? item.icon.active : item.icon.nonActive}{" "}
+                           <Typography fontSize={20}>{item.name}</Typography>
+                       </Box>
+                   )}
+               </NavLink>
+           ))}
+       </Box>
    );
 };
 

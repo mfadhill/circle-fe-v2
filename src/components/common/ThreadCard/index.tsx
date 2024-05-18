@@ -15,12 +15,12 @@ const ThreadCard: FC<IProps> = ({ thread }) => {
          sx={{
             display: "flex",
             gap: 1,
-            paddingX: 2,
+            paddingX: 1,
             borderBottom: "1px solid rgba(255, 255, 255, 0.6)",
-            py: 1,
+            py: 2,
          }}
       >
-         <Avatar alt="ava" src={thread.author.profile?.avatar ?? DEFAULT_AVA} />
+         <Avatar alt="ava" sx={{height:"30px", width:"30px"}} src={thread.author.profile?.avatar ?? DEFAULT_AVA} />
          <Box
             sx={{
                width: "100%",
